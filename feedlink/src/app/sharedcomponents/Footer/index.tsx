@@ -1,64 +1,67 @@
-// components/Footer.tsx
-"use client"
-import Image from "next/image";
+import React from "react";
 
-const Footer: React.FC = () => (
-  <footer className="bg-green-900 text-white px-6 py-10 font-sans">
-    <div className="max-w-7xl mx-auto flex flex-wrap justify-between gap-10">
-      <div className="flex flex-col min-w-[200px] flex-1">
-        <div className="flex items-center gap-2 font-bold text-3xl mb-3">
-          <Image src="/Logo.svg" alt="FeedLink Logo" width={44} height={44} priority />
-          <span className="text-[#FF8614] font-sans tracking-wide">FEEDLINK</span>
-        </div>
-        <p className="font-semibold text-lg mb-2 leading-relaxed">
-          Transforming food waste into impact <br />
-          through intelligent connections <br />
-          between producers, consumers, and recyclers.
-        </p>
-        <p className="text-green-200 font-medium mb-0">
-          Building a sustainable food ecosystem for everyone.
-        </p>
-      </div>
-      <div className="min-w-[160px] flex-1">
-        <h4 className="text-xl font-semibold mb-3">Platform</h4>
-        <ul className="space-y-2">
-          <li>
-            <a href="#" className="hover:text-[#FF8614] transition-colors">
-              How it works
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="min-w-[160px] flex-1">
-        <h4 className="text-xl font-semibold mb-3">For Users</h4>
-        <ul className="space-y-2">
-          {["Food Producers", "Consumers", "Recyclers", "Explore"].map((item) => (
-            <li key={item}>
-              <a href="#" className="hover:text-[#FF8614] transition-colors">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="min-w-[160px] flex-1">
-        <h4 className="text-xl font-semibold mb-3">Company</h4>
-        <ul className="space-y-2">
-          {["About Us", "Impacts", "Contacts"].map((item) => (
-            <li key={item}>
-              <a href="#" className="hover:text-[#FF8614] transition-colors">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-    <hr className="border-[#FF8614] border-t-2 mt-8 mb-4" />
-    <p className="text-center text-white text-lg">
-      © 2025 FeedLink. All rights reserved.
-    </p>
-  </footer>
+const Footer = () => {
+return (
+<footer className="bg-[#305006] px-4 sm:px-6 lg:px-8 py-10 text-white">
+<div className="max-w-full mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-12">
+{/* Left Content with Logo */}
+<div className="md:w-1/3 flex-shrink-0">
+<div className="flex items-center mb-4 space-x-2">
+<img src="Logo.svg" alt="Logo" className="h-12 w-auto md:h-14" />
+<span className="text-orange-400 font-semibold text-2xl md:text-3xl lg:text-4xl">
+FEEDLINK
+</span>
+</div>
+<p className="mb-4 leading-relaxed text-sm md:text-base lg:text-lg max-w-sm">
+Transforming food waste into impact through intelligent connections
+between producers, consumers, and recyclers.
+</p>
+<p className="text-xs md:text-sm lg:text-base leading-snug max-w-sm">
+Building a sustainable food ecosystem for everyone.
+</p>
+</div>
+
+{/* Link Sections */}
+<div className="flex flex-col md:flex-row justify-between md:w-2/3 text-sm md:text-base lg:text-lg font-medium gap-8 md:gap-12">
+<div>
+<p className="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+Platform
+</p>
+<p className="cursor-pointer hover:text-orange-400">How it works</p>
+</div>
+
+<div>
+<p className="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+For Users
+</p>
+<p className="cursor-pointer hover:text-orange-400">Food Producers</p>
+<p className="cursor-pointer hover:text-orange-400">Consumers</p>
+<p className="cursor-pointer hover:text-orange-400">Recyclers</p>
+<p className="cursor-pointer hover:text-orange-400">Explore</p>
+</div>
+
+<div>
+<p className="font-bold text-lg md:text-xl lg:text-2xl mb-3">
+Company
+</p>
+<p className="cursor-pointer hover:text-orange-400">About Us</p>
+<p className="cursor-pointer hover:text-orange-400">Impacts</p>
+<p className="cursor-pointer hover:text-orange-400">Contacts</p>
+</div>
+</div>
+</div>
+
+{/* Bottom HR and copyright */}
+<hr className="border-orange-400 my-8 mx-2 md:mx-6" />
+<p className="text-center text-xs md:text-sm lg:text-base px-2 md:px-6">
+© 2025 FeedLink. All rights reserved.
+</p>
+</footer>
 );
+};
 
 export default Footer;
+	
+
+
+	

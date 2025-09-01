@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <Buttons/>
+      <div className="mt-30"></div>
+      {/* <Buttons/> */}
       <Footer/>
 
     </div>
