@@ -32,7 +32,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   placeholder="Enter last name"
-                  className="w-full border-[1.5px] border-gray-300 rounded-[6px] px-3 py-2 text-[15px] font-normal text-gray-700 placeholder:text-gray-400 outline-none focus:border-[#18841e] transition"
+                  className="w-full border-[1.5px] border-gray-300 rounded-[6px] px-3 py-2 text-[15px] font-normal text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
                 />
               </div>
               <div>
@@ -42,7 +42,7 @@ const Contacts = () => {
                 <input
                   type="email"
                   placeholder="abc@gmail.com"
-                  className="w-full border-[1.5px] border-gray-300 rounded-[6px] px-3 py-2 text-[15px] font-normal text-gray-700 placeholder:text-gray-400 outline-none focus:border-[#18841e] transition"
+                  className="w-full border-[1.5px] border-gray-300 rounded-[6px] px-3 py-2 text-[15px] font-normal text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
                 />
               </div>
               <div className="flex-1 flex flex-col">
@@ -51,7 +51,7 @@ const Contacts = () => {
                 </p>
                 <textarea
                   placeholder="Text ......"
-                  className="w-full border-[1.5px] border-gray-300 rounded-[6px] px-3 py-2 text-[15px] font-normal text-gray-700 placeholder:text-gray-400 outline-none focus:border-[#18841e] transition resize-none flex-grow"
+                  className="w-full border-[1.5px] border-gray-300 rounded-[6px] px-3 py-2 text-[15px] font-normal text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition resize-none flex-grow"
                 />
               </div>
               <button
@@ -77,7 +77,7 @@ const Contacts = () => {
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-3">
                 <Phone
-                  className="w-[22px] h-[22px] text-[#18841e]"
+                  className="w-[22px] h-[22px] text-brand-green"
                   strokeWidth={2}
                 />
                 <div className="flex flex-col">
@@ -91,7 +91,7 @@ const Contacts = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail
-                  className="w-[22px] h-[22px] text-[#18841e]"
+                  className="w-[22px] h-[22px] text-brand-green"
                   strokeWidth={2}
                 />
                 <div className="flex flex-col">
@@ -108,7 +108,7 @@ const Contacts = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock
-                  className="w-[22px] h-[22px] text-[#18841e]"
+                  className="w-[22px] h-[22px] text-brand-green"
                   strokeWidth={2}
                 />
                 <span className="text-xl font-bold mb-1">
@@ -117,7 +117,7 @@ const Contacts = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin
-                  className="w-[22px] h-[22px] text-[#18841e]"
+                  className="w-[22px] h-[22px] text-brand-green"
                   strokeWidth={2}
                 />
                 <span className="text-xl font-bold mb-1">Location</span>
