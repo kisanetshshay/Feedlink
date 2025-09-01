@@ -6,30 +6,33 @@ const Navbar = () => {
 const [menuOpen, setMenuOpen] = useState(false);
 
 return (
-<nav className="bg-gradient-to-r from-[#244809] to-[#34630a] py-4 sticky top-0 z-50">
-{/* Full width container */}
+<nav className="bg-gradient-to-r from-[#244809] to-[#34630a] py-4 sticky top-0 z-50 shadow-md">
+
 <div className="max-w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
-{/* Logo + FeedLink text */}
+
 <div className="flex items-center gap-2">
-<img src="Logo.svg" alt="Logo" className="h-14 w-auto" />
-<span className="text-orange-400 font-semibold text-2xl sm:text-3xl lg:text-4xl tracking-tight">
+<img src="Logo.svg" alt="Logo" className="h-12 w-auto" />
+<span className="text-orange-400 font-semibold text-2xl sm:text-3xl tracking-tight">
 FEEDLINK
 </span>
 </div>
 
-{/* Desktop Menu - show only from lg screens (≥1024px) */}
-<ul className="hidden lg:flex items-center gap-8 text-white text-lg font-bold">
-<li className="hover:text-orange-400 cursor-pointer">Home</li>
-<li className="hover:text-orange-400 cursor-pointer">Impacts</li>
-<li className="hover:text-orange-400 cursor-pointer">About us</li>
-<li className="hover:text-orange-400 cursor-pointer">FAQ</li>
-<li className="hover:text-orange-400 cursor-pointer">Team</li>
-<li className="hover:text-orange-400 cursor-pointer">Explore</li>
-<li className="hover:text-orange-400 cursor-pointer">Contacts</li>
+
+<ul className="hidden md:flex items-center gap-6 lg:gap-10 text-white font-semibold">
+{["Home", "Impacts", "About us", "FAQ", "Team", "Explore", "Contacts"].map(
+(item) => (
+<li
+key={item}
+className="hover:text-orange-400 cursor-pointer text-sm sm:text-base lg:text-lg transition"
+>
+{item}
+</li>
+)
+)}
 </ul>
 
-{/* Mobile Hamburger Menu (visible until lg) */}
-<div className="lg:hidden">
+
+<div className="md:hidden">
 <button
 onClick={() => setMenuOpen(!menuOpen)}
 aria-label="Toggle Menu"
@@ -62,20 +65,23 @@ d="M4 6h16M4 12h16M4 18h16"
 </div>
 </div>
 
-{/* Mobile Menu (only for <lg) */}
+
 <div
-className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${
+className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
 menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
 }`}
 >
-<ul className="flex flex-col mt-4 space-y-4 text-white text-lg font-medium px-4 sm:px-6">
-<li className="hover:text-orange-500 cursor-pointer">Home</li>
-<li className="hover:text-orange-500 cursor-pointer">Impacts</li>
-<li className="hover:text-orange-500 cursor-pointer">About us</li>
-<li className="hover:text-orange-500 cursor-pointer">FAQ</li>
-<li className="hover:text-orange-500 cursor-pointer">Team</li>
-<li className="hover:text-orange-500 cursor-pointer">Explore</li>
-<li className="hover:text-orange-500 cursor-pointer">Contacts</li>
+<ul className="flex flex-col mt-4 space-y-4 text-white font-medium px-4 sm:px-6">
+{["Home", "Impacts", "About us", "FAQ", "Team", "Explore", "Contacts"].map(
+(item) => (
+<li
+key={item}
+className="hover:text-orange-500 cursor-pointer text-base transition"
+>
+{item}
+</li>
+)
+)}
 </ul>
 </div>
 </nav>
@@ -83,4 +89,6 @@ menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
 };
 
 export default Navbar;
+	
+
 	

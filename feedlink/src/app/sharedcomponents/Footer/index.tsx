@@ -4,7 +4,7 @@ const Footer = () => {
 return (
 <footer className="bg-[#305006] px-4 sm:px-6 lg:px-8 py-10 text-white">
 <div className="max-w-full mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-12">
-{/* Left Content with Logo */}
+
 <div className="md:w-1/3 flex-shrink-0">
 <div className="flex items-center mb-4 space-x-2">
 <img src="Logo.svg" alt="Logo" className="h-12 w-auto md:h-14" />
@@ -21,7 +21,7 @@ Building a sustainable food ecosystem for everyone.
 </p>
 </div>
 
-{/* Link Sections */}
+
 <div className="flex flex-col md:flex-row justify-between md:w-2/3 text-sm md:text-base lg:text-lg font-medium gap-8 md:gap-12">
 <div>
 <p className="font-bold text-lg md:text-xl lg:text-2xl mb-3">
@@ -51,7 +51,7 @@ Company
 </div>
 </div>
 
-{/* Bottom HR and copyright */}
+
 <hr className="border-orange-400 my-8 mx-2 md:mx-6" />
 <p className="text-center text-xs md:text-sm lg:text-base px-2 md:px-6">
 © 2025 FeedLink. All rights reserved.
