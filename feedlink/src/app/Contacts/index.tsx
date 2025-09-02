@@ -3,7 +3,7 @@ import React from "react";
 const Contacts = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center pt-10 px-4 md:px-8">
-      <h1 className="text-[36px] font-bold text-brand-green text-center mb-10">
+      <h1 className="text-4xl font-bold text-brand-green text-center mb-10">
         Get in Touch
       </h1>
       <div className="flex flex-col md:flex-row w-full gap-9 items-stretch">
@@ -18,7 +18,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   placeholder="Enter first name"
-                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-bold text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
+                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-medium text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
                 />
               </div>
               <div>
@@ -26,7 +26,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   placeholder="Enter last name"
-                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-bold text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
+                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-medium text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
                 />
               </div>
               <div>
@@ -34,14 +34,15 @@ const Contacts = () => {
                 <input
                   type="email"
                   placeholder="abc@gmail.com"
-                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-bold text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
+                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-medium text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition"
                 />
               </div>
               <div className="flex-1 flex flex-col">
                 <p className="text-2xl font-bold mb-2">Message:</p>
                 <textarea
-                  placeholder="Text"
-                  className="w-full border border-gray-300 rounded-md px-4 py-3 text-lg font-bold text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition resize-none flex-grow"
+                  placeholder="Text......"
+                  className="w-full border 
+                  border-gray-300 rounded-md px-4 py-3 text-lg font-medium text-gray-700 placeholder:text-gray-400 outline-none focus:border-brand-green transition resize-none flex-grow"
                 />
               </div>
               <button
