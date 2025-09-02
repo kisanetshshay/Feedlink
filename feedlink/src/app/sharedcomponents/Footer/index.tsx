@@ -7,7 +7,7 @@ return (
 
 <div className="md:w-1/3 flex-shrink-0">
 <div className="flex items-center mb-4 space-x-2">
-<img src="Logo.svg" alt="Logo" className="h-12 w-auto md:h-14" />
+<img src="Logo.svg" alt="Logo" className="h-10 w-auto md:h-12" />
 <span className="text-orange-400 font-semibold text-2xl md:text-3xl lg:text-4xl">
 FEEDLINK
 </span>
