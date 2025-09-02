@@ -6,19 +6,19 @@ const Navbar = () => {
 const [menuOpen, setMenuOpen] = useState(false);
 
 return (
-<nav className="bg-gradient-to-r from-[#244809] to-[#34630a] py-4 sticky top-0 z-50 shadow-md">
+<nav className="bg-gradient-to-r from-[#244809] to-[#34630a] py-4 sticky top-0 z-50 shadow-md ">
 
 <div className="max-w-full mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
 
-<div className="flex items-center gap-2">
-<img src="Logo.svg" alt="Logo" className="h-12 w-auto" />
-<span className="text-orange-400 font-semibold text-2xl sm:text-3xl tracking-tight">
+<div className="flex items-center gap-2 ml-7">
+<img src="logo.svg" alt="Logo" className="h-10 w-auto" />
+<span className="text-orange-400 font-semibold text-2xl sm:text-2xl tracking-tight">
 FEEDLINK
 </span>
 </div>
 
 
-<ul className="hidden md:flex items-center gap-6 lg:gap-10 text-white font-semibold">
+<ul className="hidden md:flex items-center gap-5 lg:gap-7 text-white font-semibold mr-7">
 {["Home", "Impacts", "About us", "FAQ", "Team", "Explore", "Contacts"].map(
 (item) => (
 <li
